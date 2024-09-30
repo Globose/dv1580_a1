@@ -1,0 +1,6 @@
+
+*.so
+*.o
+test_memory_manager
+test_linked_list
+

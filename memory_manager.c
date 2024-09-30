@@ -49,6 +49,7 @@ struct MemoryBlock* get_block(void* block){
 
 // Initializes the memory manager with a specified size of memory pool. 
 void mem_init(size_t size){
+    if (size < 0) return;
     m_block = malloc(size);
     m_size = size;
     first_block = add_mem(m_block, m_size, 1, NULL, NULL);
